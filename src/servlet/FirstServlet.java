@@ -11,7 +11,7 @@ import java.io.IOException;
 public class FirstServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String developer = request.getParameter("developer");
-        response.setContentType("test/html; charset=UTF-8");
+        response.setContentType("text/html; charset=UTF-8");
         response.getWriter().println("欢迎开发者" + developer);
     }
 }
